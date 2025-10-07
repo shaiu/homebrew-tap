@@ -11,7 +11,7 @@ class Alec < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/shaiu/alec/releases/download/v0.1.0/alec_0.1.0_darwin_x86_64.tar.gz"
-    sha256 "7b4466a9646cdf468d8d240886052e29f61484b12638fb4bfb30ed986714f04c"
+    sha256 "c3f50ea9de7ec435e9715adbe7afed318b0a227276a7d0de87ecf07f5b87149d"
 
     def install
       bin.install "alec"
@@ -19,7 +19,7 @@ class Alec < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/shaiu/alec/releases/download/v0.1.0/alec_0.1.0_darwin_aarch64.tar.gz"
-    sha256 "72dfff6508c69f1214d56812a2adfde7b4835bda02b0d5e5c047d4ed4843e64c"
+    sha256 "68742abd50d2c8a79e3671df8ba43949094f79cdb9812b9f33ae25c75acacb32"
 
     def install
       bin.install "alec"
