@@ -5,12 +5,12 @@
 class Tap < Formula
   desc "Terminal-based script runner with interactive TUI"
   homepage "https://github.com/shaiungar/tap"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/shaiu/tap/releases/download/v0.2.0/tap_0.2.0_darwin_all.tar.gz"
-    sha256 "c7d22035bb05d88638681e7ffa20da0e388cd0bdc280fbfdaea66fd11bd810dd"
+    url "https://github.com/shaiu/tap/releases/download/v0.3.0/tap_0.3.0_darwin_all.tar.gz"
+    sha256 "68992b834a7d55373c78aab8349d09436be35d357a8ca609bb4bfda17f8345a9"
 
     define_method(:install) do
       bin.install "tap"
@@ -19,15 +19,15 @@ class Tap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaiu/tap/releases/download/v0.2.0/tap_0.2.0_linux_amd64.tar.gz"
-      sha256 "b5e79efc860322849572b9937da01ff03d021138e9dbbcc6ebd3152d79dfa553"
+      url "https://github.com/shaiu/tap/releases/download/v0.3.0/tap_0.3.0_linux_amd64.tar.gz"
+      sha256 "c8b8722c213985b5e43f2ebd9751cd141f2bee4e5583f7e6030f5dc818a61c3a"
       define_method(:install) do
         bin.install "tap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaiu/tap/releases/download/v0.2.0/tap_0.2.0_linux_arm64.tar.gz"
-      sha256 "7224cdc379b9d0ff47ada9a58dd16212e7a3bb9169a9b8d7086a8d867bd855b4"
+      url "https://github.com/shaiu/tap/releases/download/v0.3.0/tap_0.3.0_linux_arm64.tar.gz"
+      sha256 "873f7bbaae94852b0db99f6a754b44f802edbd1a59bf3612c1a2694f3d9c5192"
       define_method(:install) do
         bin.install "tap"
       end
